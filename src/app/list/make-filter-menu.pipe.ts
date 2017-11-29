@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class MakeFilterMenuPipe implements PipeTransform {
 
-  transform(value: IItem[]): any {
+  public transform(value: IItem[]): Set<string> {
     if (!Array.isArray(value)) {
       return;
     }
