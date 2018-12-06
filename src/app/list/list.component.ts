@@ -25,7 +25,7 @@ export class ListComponent implements OnInit {
     this._dataService.chooseItem = item;
   }
 
-  public choseFilter(type: string) {
+  public choseFilter(type: string): void {
     this.currentType = type;
   }
 
